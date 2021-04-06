@@ -1,0 +1,24 @@
+FROM node:14.15.1
+
+# instale um servidor http simples para servir conteúdo estático
+#RUN npm install -g http-server
+
+# tornar a pasta 'app' o diretório de trabalho atual
+WORKDIR /app
+
+# copie 'package.json' e 'package-lock.json' (se disponível)
+COPY package*.json ./
+
+RUN npm install -g @vue/cli
+
+# install project dependencies
+RUN npm install
+
+# copia arquivos e pastas do projeto para o diretório de trabalho atual (ou seja, pasta 'app')
+COPY . .
+
+# compilar aplicativo para produção com minificação
+#RUN npm run build
+
+EXPOSE 8080
+CMD ["npm", "run", "serve"]
