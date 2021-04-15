@@ -14,11 +14,11 @@
     <div class="col s12 m4 l3 blue-grey padding-top" id="left-side">
       <div class="valign-wrapper">
         <div class="col" layout="row">
-          <img src="https://www.gravatar.com/avatar/beef4a109b5744b8b51537c0136f7e3b" alt="Erik Figueiredo" class="circle">
+          <img src="https://avatars.githubusercontent.com/u/31902418?s=100&u=f252dd38d4a8d47433c6903d53948bbd6f230800&v=4" alt="Werley Silva" class="circle">
         </div>
         <div>
           <p>
-            <span class="grey-text text-lighten-2">Erik Figueiredo</span><br>
+            <span class="grey-text text-lighten-2">Werley Silva</span><br>
             <a href="#" class="black-text"><small>configurações <i class="ion-gear-a"></i></small></a>
           </p>
         </div>
@@ -30,7 +30,7 @@
       </div>
     </div>
     <div class="col s12 m8 l9 grey lighten-3" id="right-side">
-      <!-- aqui vai o router-view -->
+     <router-view></router-view>
       <div class="col s10 grey lighten-2">
         <small>by <a href="">School Of Net</a> - 	&copy; 2017</small>
       </div>
@@ -39,10 +39,10 @@
       </div>
     </div>
   </div>
+</div>
 </template>
 
 <script>
-//import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
